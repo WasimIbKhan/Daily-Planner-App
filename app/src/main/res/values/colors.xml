@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EACA8E</color>
+    <color name="colorPrimaryDark">#DDB467</color>
+    <color name="colorAccent">#EACA8E</color>
+    <color name="transparent_green">#D3FAC5</color>
+    <color name="BlackColor">#000</color>
+    <color name="transparentBlack">#3C3C3C</color>
+    <color name="WhiteColor">#FFFFFF</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="darkGrayColor">#A9A9A9</color>
+    <color name="primaryDarkColor" />
+    <color name="materialRed">#AF002A</color>
+    <color name="materialYellow">#F1C40F</color>
+    <color name="materialGrey">#F0F8FF</color>
+    <color name="switch_blue">#448DCD</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="transparent_orange">#F1D6A4</color>
+    <color name="backround">#203C3C3C</color>
+    <color name="color_picked">#F0F8FF</color>
+    <color name="work">#661183</color>
+    <color name="Leisure">#bd930b </color>
+    <color name="Social">#104275</color>
+    <color name="learning">#960e29</color>
+    <color name="breaks">#009a9a</color>
+    <color name="dawn">#1AFFE5B5</color>
+    <color name="icons">#DAB36A</color>
+
+
+</resources>

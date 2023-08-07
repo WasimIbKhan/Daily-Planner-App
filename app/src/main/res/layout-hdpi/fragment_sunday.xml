@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    tools:context=".DailyActivity.Sunday"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/underview"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+
+        >
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:minHeight="?attr/actionBarSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintdawn"
+        android:layout_width="match_parent"
+        android:layout_height="40.5dp"
+        android:layout_alignBottom="@+id/toggleTuesday"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/underview"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/dawn">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RadioGroup
+        android:id="@+id/toggleSunday"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/monday_list"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/underview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/pink_out_line"
+        android:checkedButton="@+id/permanentSwitch"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/include2"
+        app:layout_constraintStart_toStartOf="@+id/include2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="115dp">
+
+        <RadioButton
+            android:id="@+id/permanentSwitch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Permanent"
+            android:textColor="@color/WhiteColor" />
+
+        <RadioButton
+            android:id="@+id/temporarySwitch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Temporary"
+            android:textColor="@color/colorAccent" />
+    </RadioGroup>
+
+    <include
+        layout="@layout/sunday_list"
+        android:layout_width="match_parent"
+        android:layout_height="554dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toggleSunday"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="9dp"
+        android:clickable="true"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/colorAccent"
+        app:fab_addButtonPlusIconColor="@color/WhiteColor"
+        app:fab_labelStyle="@style/custom_Fab"
+        android:focusable="true">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addPermanentContentSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_add_green"
+            app:fab_title="@string/Permanent"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addTemporaryContentSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_add_green"
+            app:fab_title="@string/Temporary"
+            />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

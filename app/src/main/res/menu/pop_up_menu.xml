@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/DuplicateToOption"
+        android:title="@string/duplicate_to"
+        android:orderInCategory="102"/>
+    <item android:id="@+id/MoveToOption"
+        android:title="@string/move_to"
+        android:orderInCategory="101"/>
+    <item android:id="@+id/SkipOption"
+        android:title="@string/skip"
+        android:orderInCategory="103"/>
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/advent_pro_bold</item>
+        <item>@font/advent_pro_semibold</item>
+        <item>@font/advent_pro_thin</item>
+        <item>@font/alegreya_sans_medium</item>
+        <item>@font/amiko_bold</item>
+        <item>@font/baloo_da</item>
+        <item>@font/candal</item>
+        <item>@font/flamenco</item>
+    </array>
+</resources>
